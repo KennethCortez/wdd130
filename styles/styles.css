@@ -1,0 +1,26 @@
+nav {
+    background-color: bisque;
+    padding: 10px;
+}
+
+nav a {
+    background-color: bisque;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(0, 0, 0)
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid bisque;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 10px;
+}
