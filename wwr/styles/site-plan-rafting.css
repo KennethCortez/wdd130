@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cabin:wght@400;700&display=swap);
+
+body {
+    font-family: var(--'Cabin', sans-serif);
+    max-width: 960px;
+    padding: 20px;
+}
+
+: :root {
+    --Primary-Color: #1A578C;
+    --Secondary-Color: #5F9E6E;
+    --Accent1-Color: #D9BF77;
+    --Accent2-Color: #FFFFFF;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Cabin', sans-serif;
+
+    --nav-background-color: #084C61;
+    --nav-link-color: #FF5733;
+    --nav-hover-link-color: #1A578C;
+    --nav-hover-backgroung-color: #D9BF77;
+}
+
+body {
+    font-family: var(--'Cabin', sans-serif);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--'Montserrat', sans-serif);
+    color: var(--#1A578C);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--#D9BF77);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--#084C61);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--#FF5733);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--#FF5733);
+}
+
+nav a:hover {
+    color: var(--#1A578C);
+    background-color: var(--#D9BF77);
+}
