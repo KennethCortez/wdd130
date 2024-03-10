@@ -1,12 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cabin:wght@400;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cabin:wght@400;700&display=swap');
 
 body {
-    font-family: var(--'Cabin', sans-serif);
+    font-family: var(--paragraph-font, sans-serif);
     max-width: 960px;
     padding: 20px;
 }
 
-: :root {
+:root {
     --Primary-Color: #1A578C;
     --Secondary-Color: #5F9E6E;
     --Accent1-Color: #D9BF77;
@@ -21,20 +21,14 @@ body {
     --nav-hover-backgroung-color: #D9BF77;
 }
 
-body {
-    font-family: var(--'Cabin', sans-serif);
-    max-width: 960px;
-    padding: 20px;
-}
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--'Montserrat', sans-serif);
-    color: var(--#1A578C);
+    font-family: var(--heading-font, sans-serif);
+    color: var(--Primary-Color);
 }
 
 header {
     padding: 20px;
-    background-color: var(--#D9BF77);
+    background-color: var(--Accent1-Color);
 }
 
 p {
@@ -42,23 +36,23 @@ p {
 }
 
 nav {
-    background-color: var(--#084C61);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
 }
 
 nav a {
     display: block;
-    color: var(--#FF5733);
+    color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
 
 nav a:link, nav a:visited {
-    color: var(--#FF5733);
+    color: var(--nav-link-color);
 }
 
 nav a:hover {
-    color: var(--#1A578C);
-    background-color: var(--#D9BF77);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-backgroung-color);
 }
