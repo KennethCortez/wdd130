@@ -7,10 +7,10 @@ body {
 }
 
 :root {
-    --primary-Color: #1A578C;
-    --secondary-Color: #5F9E6E;
-    --accent1-Color: #D9BF77;
-    --accent2-Color: #FFFFFF;
+    --primary-color: #1A578C;
+    --secondary-color: #5F9E6E;
+    --accent1-color: #D9BF77;
+    --accent2-color: #FFFFFF;
 
     --heading-font: 'Montserrat', sans-serif;
     --paragraph-font: 'Cabin', sans-serif;
@@ -18,17 +18,17 @@ body {
     --nav-background-color: #084C61;
     --nav-link-color: #FF5733;
     --nav-hover-link-color: #1A578C;
-    --nav-hover-backgroung-color: #D9BF77;
+    --nav-hover-background-color: #D9BF77;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font, sans-serif);
-    color: var(--Primary-Color);
+    color: var(--primary-color);
 }
 
 header {
     padding: 20px;
-    background-color: var(--Accent1-Color);
+    background-color: var(--accent1-color);
 }
 
 p {
@@ -54,5 +54,5 @@ nav a:link, nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-backgroung-color);
+    background-color: var(--nav-hover-background-color);
 }
