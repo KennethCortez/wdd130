@@ -7,10 +7,10 @@ body {
 }
 
 :root {
-    --Primary-Color: #1A578C;
-    --Secondary-Color: #5F9E6E;
-    --Accent1-Color: #D9BF77;
-    --Accent2-Color: #FFFFFF;
+    --primary-Color: #1A578C;
+    --secondary-Color: #5F9E6E;
+    --accent1-Color: #D9BF77;
+    --accent2-Color: #FFFFFF;
 
     --heading-font: 'Montserrat', sans-serif;
     --paragraph-font: 'Cabin', sans-serif;
