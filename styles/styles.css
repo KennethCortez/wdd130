@@ -55,7 +55,7 @@ footer {
     box-sizing: border-box;
 }
 
-/* Class Selectors*/
+/*Class Selectors*/
 
 .box {
     margin: 1rem;
@@ -66,8 +66,8 @@ footer {
 }
 
 aside h2 {
-    position: relative;
-    top: 115px;
-    left: 50px;
+    position: absolute;
+    top: 675px;
+    left: 83px;
     width: 2rem;
 }
