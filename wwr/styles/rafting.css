@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cabin:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1A578C;
+    --secondary-color: #5F9E6E;
+    --accent1-color: #D9BF77;
+    --accent2-color: #FFFFFF;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Cabin', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font, sans-serif);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav.socialmedialinks a {
+    text-decoration: none;
+}
+
+body {
+    margin: auto;
+    max-width: 900px;
+    padding: 20px;
+  }
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 80%;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+}
+
+
+
+
+
+  
