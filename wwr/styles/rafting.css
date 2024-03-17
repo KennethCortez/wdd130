@@ -23,6 +23,11 @@ nav.socialmedialinks a {
     text-decoration: none;
 }
 
+.socialmedialinks a img {
+    width: 24px;
+    height: 24px;
+}
+
 body {
     margin: auto;
     max-width: 1100px;
