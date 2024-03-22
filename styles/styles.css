@@ -1,12 +1,20 @@
 nav {
     background-color: bisque;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
-    background-color: bisque;
     display: block;
+    background-color: bisque;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2 rem;
+    font-weight: 700;
+    color: #fff;
 }
+
 h1 {
     color: rgb(0, 0, 0)
 }
@@ -25,9 +33,9 @@ img {
 p {
     padding: 10px;
 }
-main {
+/*main {
     max-width: 840px;
-}
+}*/
 aside {
     position: relative;
     width: 20em;
@@ -43,6 +51,11 @@ main img {
     float: right;
 }
 p { padding: 0;}
+
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 
 footer {
     margin-top: 15px;
@@ -71,4 +84,21 @@ aside h2 {
     top: 50px;
     left: 70px;
     width: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
