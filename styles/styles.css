@@ -55,6 +55,7 @@ p { padding: 0;}
 header, footer {
     max-width: 840px;
     margin: 0 auto;
+    color: #000;
 }
 
 footer {
