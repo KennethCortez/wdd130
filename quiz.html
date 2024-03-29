@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <meta name="description" content="Simple HTML Quiz">
+    <meta name="author" content="Kenneth Leonel Cortez">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+
+<h1>Simple HTML Quiz</h1>
+
+<form action="quiz_results.php">
+
+  <label for="q1">What does HTML stand for?:</label>
+  <input type="text" id="q1" name="q1" required><br><br>
+  
+  <label for="q2">Describe the purpose of the HTML &lt;div&gt; tag:</label><br>
+  <textarea id="q2" name="q2" rows="4" cols="50" required></textarea><br><br>
+  
+  <label for="q3">Which HTML tag is used to define an unordered list?:</label><br>
+  <select id="q3" name="q3" required>
+    <option value="" selected disabled>Choose One ...</option>
+    <option value="a">&lt;ul&gt;</option>
+    <option value="b">&lt;ol&gt;</option>
+    <option value="c">&lt;li&gt;</option>
+  </select><br><br>
+  
+  <label for="q4">How many heading levels are available in HTML?:</label><br>
+  <input type="number" id="q4" name="q4" required><br><br>
+  
+  <input type="submit" value="Submit Quiz">
+</form> 
+</body>
+</html>
