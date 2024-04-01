@@ -233,6 +233,30 @@ footer p {
     color: white;
 }
 
+/* Employees */
+.employees {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.employees .employee {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.employees .employee img {
+    width: 250px;
+    height: auto;
+    filter: none;
+}
+
+.employees .employee figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
 /* Message Section */
 .message {
     padding: 10px;
