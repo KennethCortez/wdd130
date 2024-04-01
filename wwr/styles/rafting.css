@@ -296,7 +296,7 @@ footer p {
 
 /* Map Styling */
 .map {
-    width: 100%;
+    width: 375px;
     height: 275px;
     overflow: hidden;
     border-radius: 5px;
