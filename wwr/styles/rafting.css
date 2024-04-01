@@ -354,6 +354,7 @@ form h2 {
 label, p {
     font-weight: bold;
     font-family: var(--paragraph-font);
+    text-align: center;
 }
   
 input[type="text"],
