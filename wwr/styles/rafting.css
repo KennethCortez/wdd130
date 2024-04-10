@@ -203,8 +203,6 @@ footer p {
     font-family: var(--heading-font);
 }
 
-/*CONTAC US SECTION*/
-
 /* Team Section */
 .team {
     position: relative;
@@ -263,8 +261,7 @@ footer p {
 /* Message Section */
 .message {
     padding: 10px;
-    background-color: #D6E5E3;
-    background-color: #cee1eb;
+    background-color: #D6E5E3; /* corrected background color */
     border: 1px solid #ddd;
     border-radius: 3px;
     display: flex;
@@ -287,9 +284,9 @@ footer p {
     grid-column: 1 / 2;
 }
 
-.messages p{
+.messages p {
     flex: 1;
-    text-align:center;
+    text-align: center;
 }
 
 .message p {
@@ -313,13 +310,11 @@ footer p {
     border: none;
 }
 
-/*Reservation Section*/
+/* Reservation Section */
 .reservation {
     padding: 20px;
-    background-color: #D6E5E3;
-    border: 1px solid #D6E5E3;
-    background-color: #a7c0ce;
-    border: 1px solid #cee1eb;
+    background-color: #D6E5E3; /* corrected background color */
+    border: 1px solid #D6E5E3; /* corrected border color */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -333,7 +328,7 @@ footer p {
     gap: 20px;
 }
 
-.reservartion-text {
+.reservation-text { /* corrected class name */
     grid-column: 1 / 2;
 }
 
@@ -343,16 +338,14 @@ footer p {
     line-height: 1.5;
 }
 
-/*Forms Section*/
-
+/* Forms Section */
 form {
     max-width: 500px;
     margin: 20px auto;
-    background-color: #D6E5E3;
-    background-color: #a7c0ce;
+    background-color: #D6E5E3; /* corrected background color */
     padding: 10px;
-  }
-  
+}
+
 form h2 {
     text-align: center;
     color: var(--primary-color);
@@ -363,7 +356,7 @@ label, p {
     font-family: var(--paragraph-font);
     text-align: left;
 }
-  
+
 input[type="text"],
 textarea,
 select {
@@ -375,7 +368,7 @@ select {
     box-sizing: border-box;
     resize:vertical;
 }
-  
+
 input[type="button"] {
     background-color: #3fa851;
     color: white;
@@ -386,11 +379,11 @@ input[type="button"] {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
-  }
-  
+}
+
 input[type="button"]:hover {
     background-color: hsl(123, 44%, 57%);
-  }
+}
 
 .radio-group {
     display: flex;
@@ -409,7 +402,7 @@ input[type="button"]:hover {
     align-self: center;
 }
 
-/*Top Section*/
+/* Top Section */
 .top {
     position: relative;
 }
@@ -457,12 +450,10 @@ input[type="button"]:hover {
     color: #fff;
 }
 
-/*Trips section*/
-
+/* Trips section */
 .trip {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .trip-column {
@@ -486,8 +477,7 @@ input[type="button"]:hover {
     max-width: 100%;
 }
 
-/*Helo Section*/
-
+/* Helo Section */
 .helo {
     position: relative;
     display: flex;
@@ -534,12 +524,12 @@ input[type="button"]:hover {
     text-align: center;
 }
 
-/*Newsletter section*/
-
+/* Newsletter section */
 .newsletter {
     background-color: #D6E5E3;
     padding-top: 0px;
 }
+
 .newsletter-content {
     display: flex;
     flex-direction: row;
@@ -574,8 +564,7 @@ input[type="button"]:hover {
     padding-left: 85px;
 }
 
-/*call to action section*/
-
+/* Call to action section */
 .call-to-action {
     text-align: center;
     padding: 80px;
