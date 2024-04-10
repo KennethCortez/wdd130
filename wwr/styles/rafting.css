@@ -426,7 +426,7 @@ input[type="button"]:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .top h1 {
@@ -444,61 +444,60 @@ input[type="button"]:hover {
 
 .booknow {
     background-color: transparent;
-    border: 2px solid #000; /* Black border */
-    color: #000; /* Black text color */
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 16px; /* Adjust font size as needed */
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition effect */
+    transition: all 0.3s ease;
 }
 
 .booknow:hover {
-    background-color: #73ad81; /* Black background color on hover */
-    color: #fff; /* White text color on hover */
+    background-color: #73ad81;
+    color: #fff;
 }
 
 /*Trips section*/
 
 .trip {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly between the columns */
+    justify-content: space-between;
     
 }
 
 .trip-column {
-    flex: 1; /* Each column takes up equal space */
-    padding: 0 10px; /* Add padding between columns */
-    box-sizing: border-box; /* Include padding in width calculation */
+    flex: 1;
+    padding: 0 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
 .trip-column figure {
-    margin-bottom: 20px; /* Add space between figures */
+    margin-bottom: 20px;
 }
 
 .trip-column figure img {
     display: block;
-    margin: 0 auto; /* Center align images within grid items */
-    width: 100%; /* Ensure images take up 100% of their container's width */
-    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-    object-fit: cover; /* Ensure the entire container is filled, even if it crops the image */
-    max-width: 100%; /* Ensure proper alignment */
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
 }
-/*Homepage Section*/
 
-/*Helo Sention*/
+/*Helo Section*/
 
 .helo {
     position: relative;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .helo-content {
     display: flex;
-    justify-content: space-between; /* Separate text and image into two columns */
+    justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     width: 100%;
@@ -506,26 +505,25 @@ input[type="button"]:hover {
 }
 
 .text-column {
-    width: 50%; /* Take up half of the space */
+    width: 50%;
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
 }
 
 .image-column {
-    width: 50%; /* Take up half of the space */
+    width: 50%;
 }
 
 .image-column img {
-    width: 100%; /* Make sure image fills its container */
+    width: 100%;
     height: auto;
 }
 
-/* Adjust styles as needed */
 .text-column h1 {
     color: var(--primary-color);
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
     margin-top: 0;
 }
 
@@ -561,8 +559,8 @@ input[type="button"]:hover {
 .right-column {
     flex: 1;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     padding-left: 20px; 
 }
 
@@ -570,7 +568,6 @@ input[type="button"]:hover {
     background-color: #D6E5E3;
 }
 
-/* Adjust styles as needed */
 .newsletter img {
     max-width: 50%;
     height: auto;
@@ -593,26 +590,25 @@ input[type="button"]:hover {
 
 .us-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-    gap: 20px; /* Add some gap between grid items */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     background-color: #d6e5e3;
 }
 
 .us-item {
-    text-align: center; /* Center align text within grid items */
+    text-align: center;
 }
 
 .us-item img {
     display: block;
-    margin: 0 auto; /* Center align images within grid items */
-    width: 50%; /* Ensure images take up 100% of their container's width */
-    height: 75%; /* Ensure images take up 100% of their container's height */
-    object-fit: cover; /* Ensure the entire container is filled, even if it crops the image */
+    margin: 0 auto;
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
     max-width: 100%; 
 }
 
-/* Optional: Adjust styles as needed */
 .us-item p {
-    margin-top: 10px; /* Add some space between image and text */
+    margin-top: 10px;
     text-align: center;
 }
