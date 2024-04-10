@@ -23,6 +23,9 @@ p {
 nav.socialmedialinks a {
     text-decoration: none;
     margin-left: 10px;
+    color: #ffffff;
+    font-family: var(--heading-font);
+    font-style: oblique;
 }
 
 .socialmedialinks a img {
@@ -83,7 +86,7 @@ body {
 }
 
 .logo img {
-    max-height: 100px;
+    max-height: 70px;
 }
 
 .navigationbar {
@@ -106,7 +109,7 @@ body {
 /* History Section */
 .history {
     padding: 20px;
-    background-color: #cee1eb;
+    background-color: #D6E5E3;
     border: 1px solid #ddd;
     border-radius: 5px;
     display: flex;
@@ -148,7 +151,7 @@ body {
 /* Adventures Section */
 .adventures {
     padding: 20px;
-    background-color: #cee1eb;
+    background-color: #D6E5E3;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
@@ -198,4 +201,398 @@ footer p {
     color: white;
     margin: 0;
     font-family: var(--heading-font);
+}
+
+/*CONTAC US SECTION*/
+
+/* Team Section */
+.team {
+    position: relative;
+}
+
+.team img {
+    display: flex;
+    width: 100%;
+    height: 37rem;
+    filter: blur(1.3px);
+}
+
+.team h1 {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    z-index: 2;
+    color: #fff;
+}
+
+.team article {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 80%;
+    color: white;
+}
+
+/* Employees */
+.employees {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.employees .employee {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.employees .employee img {
+    width: 250px;
+    height: auto;
+    filter: none;
+}
+
+.employees .employee figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Message Section */
+.message {
+    padding: 10px;
+    background-color: #D6E5E3;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.message h2 {
+    text-align: center;
+}
+
+.message-content {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.message-text {
+    grid-column: 1 / 2;
+}
+
+.messages p{
+    flex: 1;
+    text-align:center;
+}
+
+.message p {
+    font-family: var(--paragraph-font);
+    margin-top: 0.5px;
+    line-height: 1.5;
+}
+
+/* Map Styling */
+.map {
+    width: 375px;
+    height: 275px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*Reservation Section*/
+.reservation {
+    padding: 20px;
+    background-color: #D6E5E3;
+    border: 1px solid #D6E5E3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.reservation-content {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.reservartion-text {
+    grid-column: 1 / 2;
+}
+
+.reservation p {
+    font-family: var(--paragraph-font);
+    margin-top: 0.5px;
+    line-height: 1.5;
+}
+
+/*Forms Section*/
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #D6E5E3;
+    padding: 10px;
+  }
+  
+form h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+label, p {
+    font-weight: bold;
+    font-family: var(--paragraph-font);
+    text-align: left;
+}
+  
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize:vertical;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    align-self: center;
+}
+
+/*Top Section*/
+.top {
+    position: relative;
+}
+
+.top img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.top .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.top h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsl(0, 0%, 100%);
+}
+
+.bookbutton {
+    text-align: center;
+    background-color: #D6E5E3;
+}
+
+.booknow {
+    background-color: transparent;
+    border: 2px solid #000; /* Black border */
+    color: #000; /* Black text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.booknow:hover {
+    background-color: #73ad81; /* Black background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/*Trips section*/
+
+.trip {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly between the columns */
+    
+}
+
+.trip-column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 0 10px; /* Add padding between columns */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-column figure {
+    margin-bottom: 20px; /* Add space between figures */
+}
+
+.trip-column figure img {
+    display: block;
+    margin: 0 auto; /* Center align images within grid items */
+    width: 100%; /* Ensure images take up 100% of their container's width */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    object-fit: cover; /* Ensure the entire container is filled, even if it crops the image */
+    max-width: 100%; /* Ensure proper alignment */
+}
+/*Homepage Section*/
+
+/*Helo Sention*/
+
+.helo {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.helo-content {
+    display: flex;
+    justify-content: space-between; /* Separate text and image into two columns */
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    background-color: #D6E5E3;
+}
+
+.text-column {
+    width: 50%; /* Take up half of the space */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start;
+}
+
+.image-column {
+    width: 50%; /* Take up half of the space */
+}
+
+.image-column img {
+    width: 100%; /* Make sure image fills its container */
+    height: auto;
+}
+
+/* Adjust styles as needed */
+.text-column h1 {
+    color: var(--primary-color);
+    text-align: center; /* Center the text horizontally */
+    margin-top: 0;
+}
+
+.text-column p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/*Newsletter section*/
+
+.newsletter {
+    background-color: #D6E5E3;
+    padding-top: 0px;
+}
+.newsletter-content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.newsletter h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1;
+    align-items: center;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-left: 20px; 
+}
+
+.right-column form {
+    background-color: #D6E5E3;
+}
+
+/* Adjust styles as needed */
+.newsletter img {
+    max-width: 50%;
+    height: auto;
+    padding-left: 85px;
+}
+
+/*call to action section*/
+
+.call-to-action {
+    text-align: center;
+    padding: 80px;
+    background-color: #d6e5e3;
+}
+
+.call-to-action h2,
+.call-to-action p,
+.call-to-action .booknow {
+    text-align: center;
+}
+
+.us-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    gap: 20px; /* Add some gap between grid items */
+    background-color: #d6e5e3;
+}
+
+.us-item {
+    text-align: center; /* Center align text within grid items */
+}
+
+.us-item img {
+    display: block;
+    margin: 0 auto; /* Center align images within grid items */
+    width: 50%; /* Ensure images take up 100% of their container's width */
+    height: 75%; /* Ensure images take up 100% of their container's height */
+    object-fit: cover; /* Ensure the entire container is filled, even if it crops the image */
+    max-width: 100%; 
+}
+
+/* Optional: Adjust styles as needed */
+.us-item p {
+    margin-top: 10px; /* Add some space between image and text */
+    text-align: center;
 }

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water</title>
+    <title>Contact - White Water</title>
     <meta name="description" content="The perfect way to contact Us">
     <meta name="author" content="Kenneth Leonel Cortez">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cabin:wght@400;700&display=swap">
 </head>
 <body>
@@ -22,22 +22,22 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
+        <div class="team">
             <img src="images/unsplashback.jpg" alt="Background page">
             <h1>Reach Our Team</h1>
             <article class="employees">
-                <div class="employee">
+                <figure class="employee">
                     <img src="images/julia.jpeg" alt="Julia an employee of the rafting company">
                     <figcaption>Julia Hernandez</figcaption>
-                </div>
-                <div class="employee">
+                </figure>
+                <figure class="employee">
                     <img src="images/tom.jpeg" alt="Tom an employee of the rafting company">
                     <figcaption>Tom Cannon</figcaption>
-                </div>
-                <div class="employee">
+                </figure>
+                <figure class="employee">
                     <img src="images/vanessa.jpeg" alt="Vanessa an employee of the rafting company">
                     <figcaption>Vanessa Richmond</figcaption>
-                </div>
+                </figure>
             </article>
         </div>
         <section class="message">
@@ -47,38 +47,38 @@
                 <a href="whitewater@gmail.com">whitewater@gmail.com</a>
                 <p>Or Visit us here: La curva de la muerte, Sonsonate, El Salvador</p>
             </div>    
-            <div clas="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2397.3497552000267!2d-89.71452129899353!3d13.709835854882588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2ssv!4v1711848497995!5m2!1ses-419!2ssv" width="375" height="275" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2397.3497552000267!2d-89.71452129899353!3d13.709835854882588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2ssv!4v1711848497995!5m2!1ses-419!2ssv" width="375" height="275" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
             </div>
         </section>
         <section class="reservation">
             <h2>Can't wait?  Make a reservation now!</h2>
             <form action="reservation.php">
-
+                
                 <label for="name">Enter your name:</label>
                 <input type="text" id="name" name="name" required><br><br>
                 
                 <label for="email">Enter your Email</label>
-                <input type="email" id="email" name="email" required><br<><br><br><br>
+                <input type="email" id="email" name="email" required><br><br>
                 
-                <label for="purpose">What do you want to do?</label>
+                <p> What do you want to do?</p>
                 <div class="radio-group">
-                    <input type="radio" id="General Inquiry" name="purpose" value="General Inquiry">
-                    <label for="General Inquiry">General Inquiry</label><br>
+                    <input type="radio" id="generalinquiry" name="purpose" value="General Inquiry">
+                    <label for="generalinquiry">General Inquiry</label><br>
                     
-                    <input type="radio" id="Reservation Question" name="purpose" value="Reservation Question">
-                    <label for="Reservation Question">Reservation Question</label><br>
+                    <input type="radio" id="reservationquestion" name="purpose" value="Reservation Question">
+                    <label for="reservationquestion">Reservation Question</label><br>
                     
-                    <input type="radio" id="Website Suggestion" name="purpose" value="Website Suggestion">
-                    <label for="Website Suggestion">Website Suggestion</label><br>
+                    <input type="radio" id="websitesuggestion" name="purpose" value="Website Suggestion">
+                    <label for="websitesuggestion">Website Suggestion</label><br>
                 </div><br> 
                 <label for="q3">Write your Message</label><br>
                 <textarea id="q3" name="q3" rows="4" cols="50" required></textarea><br><br>
                 
                 <input type="checkbox" id="subscribe" name="subscribe">
                 <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
-
-                <input type="submit" value="Submit">               
+                
+                <button type="submit" class="booknow">Send Message</button>             
             </form>
         </section>
     </main>
