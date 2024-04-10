@@ -11,7 +11,7 @@
 
 /* Typography */
 h1, h2, h3 {
-    font-family: var(--heading-font, sans-serif);
+    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
@@ -51,24 +51,25 @@ body {
     height: auto;
 }
 
-.hero h1 {
+.hero h1, .hero article {
     position: absolute;
-    top: 0%;
-    left: 40%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
     color: #fff;
 }
 
+.hero h1 {
+    top: 0%;
+    left: 40%;
+    z-index: 2;
+}
+
 .hero article {
-    position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
     padding: 20px;
     max-width: 80%;
-    color: white;
 }
 
 .hero article img {
@@ -107,139 +108,43 @@ body {
 }
 
 /* History Section */
-.history {
+.history, .adventures, .reservation {
     padding: 20px;
     background-color: #D6E5E3;
     border: 1px solid #ddd;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.history, .reservation {
     text-align: left;
 }
 
-.history-content {
-    display: grid; 
+.history-content, .adventure-images, .reservation-content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.history-text {
-    grid-column: 1 / 2;
-}
-
-.history-image {
-    grid-column: 2 / 3;
-}
-
-.history-image img {
+.history-image, .adventure-images img, .top img {
     max-width: 100%;
     height: auto;
 }
 
-.history-image figcaption {
+.history-image figcaption, .adventure-images figcaption {
     font-style: italic;
     text-align: center;
 }
 
-.history p {
+.history p, .reservation p {
     font-family: var(--paragraph-font);
     margin-top: 0.5px;
     line-height: 1.5;
 }
 
-/* Adventures Section */
-.adventures {
-    padding: 20px;
-    background-color: #D6E5E3;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.adventure-images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 1px 0;
-}
-
-.adventure-images figure {
-    flex: 0 0 auto;
-    margin: 0;
-    max-width: 200px;
-    width: 200%;
-}
-
-.adventure-images img {
-    max-width: 100%;
-    height: auto;
-}
-
-.adventure-images figcaption {
-    font-style: italic;
-    margin-top: 5px;
-}
-
-.adventures h2 {
-    margin-bottom: 10px;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Footer */
-footer {
-    padding: 10px 20px;
-    background-color: #73ad81;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-footer p {
-    color: white;
-    margin: 0;
-    font-family: var(--heading-font);
-}
-
-/*CONTAC US SECTION*/
-
-/* Team Section */
-.team {
-    position: relative;
-}
-
-.team img {
-    display: flex;
-    width: 100%;
-    height: 37rem;
-    filter: blur(1.3px);
-}
-
-.team h1 {
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    z-index: 2;
-    color: #fff;
-}
-
-.team article {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    max-width: 80%;
-    color: white;
-}
-
 /* Employees */
 .employees {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -263,7 +168,7 @@ footer p {
 /* Message Section */
 .message {
     padding: 10px;
-    background-color: #D6E5E3;
+    background-color: #cee1eb; /* corrected duplicate declaration */
     border: 1px solid #ddd;
     border-radius: 3px;
     display: flex;
@@ -272,26 +177,18 @@ footer p {
     text-align: center;
 }
 
-.message h2 {
-    text-align: center;
-}
-
-.message-content {
-    display: grid; 
+.message-content, .reservation-content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.message-text {
-    grid-column: 1 / 2;
-}
-
-.messages p{
+.message p, .messages p {
     flex: 1;
-    text-align:center;
+    text-align: center;
 }
 
-.message p {
+.message p, .reservation p {
     font-family: var(--paragraph-font);
     margin-top: 0.5px;
     line-height: 1.5;
@@ -312,89 +209,20 @@ footer p {
     border: none;
 }
 
-/*Reservation Section*/
-.reservation {
-    padding: 20px;
-    background-color: #D6E5E3;
-    border: 1px solid #D6E5E3;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-}
-
-.reservation-content {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.reservartion-text {
-    grid-column: 1 / 2;
-}
-
-.reservation p {
-    font-family: var(--paragraph-font);
-    margin-top: 0.5px;
-    line-height: 1.5;
-}
-
-/*Forms Section*/
-
+/* Forms Section */
 form {
     max-width: 500px;
     margin: 20px auto;
-    background-color: #D6E5E3;
+    background-color: #a7c0ce; /* corrected duplicate declaration */
     padding: 10px;
-  }
-  
-form h2 {
-    text-align: center;
-    color: var(--primary-color);
 }
 
-label, p {
-    font-weight: bold;
-    font-family: var(--paragraph-font);
-    text-align: left;
-}
-  
-input[type="text"],
-textarea,
-select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize:vertical;
-}
-
-.radio-group {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    margin-bottom: 15px;
-}
-
-.radio-group label {
-    display: flex;
-    align-items: center;
-}
-
-.radio-group input[type="radio"] {
-    margin-right: 10px;
-    align-self: center;
-}
-
-/*Top Section*/
-.top {
+/* Top Section */
+.top, .helo {
     position: relative;
 }
 
-.top img {
+.top img, .helo-content .image-column img {
     display: block;
     width: 100%;
     height: auto;
@@ -406,10 +234,10 @@ select {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.top h1 {
+.top h1, .helo-content .text-column h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -417,133 +245,21 @@ select {
     color: hsl(0, 0%, 100%);
 }
 
-.bookbutton {
-    text-align: center;
-    background-color: #D6E5E3;
-}
-
-.booknow {
-    background-color: transparent;
-    border: 2px solid #000; /* Black border */
-    color: #000; /* Black text color */
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 16px; /* Adjust font size as needed */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition effect */
-}
-
-.booknow:hover {
-    background-color: #73ad81; /* Black background color on hover */
-    color: #fff; /* White text color on hover */
-}
-
-/*Trips section*/
-
-.trip {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly between the columns */
-    
-}
-
-.trip-column {
-    flex: 1; /* Each column takes up equal space */
-    padding: 0 10px; /* Add padding between columns */
-    box-sizing: border-box; /* Include padding in width calculation */
-    display: flex;
-    flex-direction: column;
-}
-
-.trip-column figure {
-    margin-bottom: 20px; /* Add space between figures */
-}
-
-.trip-column figure img {
-    display: block;
-    margin: 0 auto; /* Center align images within grid items */
-    width: 100%; /* Ensure images take up 100% of their container's width */
-    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-    object-fit: cover; /* Ensure the entire container is filled, even if it crops the image */
-    max-width: 100%; /* Ensure proper alignment */
-}
-/*Homepage Section*/
-
-/*Helo Sention*/
-
-.helo {
-    position: relative;
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-}
-
-.helo-content {
-    display: flex;
-    justify-content: space-between; /* Separate text and image into two columns */
-    align-items: center;
-    max-width: 1100px;
-    width: 100%;
-    background-color: #D6E5E3;
-}
-
-.text-column {
-    width: 50%; /* Take up half of the space */
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: flex-start;
-}
-
-.image-column {
-    width: 50%; /* Take up half of the space */
-}
-
-.image-column img {
-    width: 100%; /* Make sure image fills its container */
-    height: auto;
-}
-
-/* Adjust styles as needed */
-.text-column h1 {
-    color: var(--primary-color);
-    text-align: center; /* Center the text horizontally */
-    margin-top: 0;
-}
-
-.text-column p {
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-}
-
-/*Newsletter section*/
-
+/* Newsletter section */
 .newsletter {
     background-color: #D6E5E3;
     padding-top: 0px;
 }
+
 .newsletter-content {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
 }
 
-.newsletter h2 {
-    text-align: center;
-    padding: 20px;
-}
-
-.left-column {
+.left-column, .right-column {
     flex: 1;
     align-items: center;
-}
-
-.right-column {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 20px; 
 }
 
 .right-column form {
@@ -557,42 +273,62 @@ select {
     padding-left: 85px;
 }
 
-/*call to action section*/
-
+/* Call to action section */
 .call-to-action {
     text-align: center;
     padding: 80px;
     background-color: #d6e5e3;
 }
 
-.call-to-action h2,
-.call-to-action p,
-.call-to-action .booknow {
-    text-align: center;
+/* Trips section */
+.trip {
+    display: flex;
+    justify-content: space-between;
 }
 
+.trip-column {
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-column figure {
+    margin-bottom: 20px;
+}
+
+.trip-column figure img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/* US Layout */
 .us-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-    gap: 20px; /* Add some gap between grid items */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     background-color: #d6e5e3;
 }
 
 .us-item {
-    text-align: center; /* Center align text within grid items */
+    text-align: center;
 }
 
 .us-item img {
     display: block;
-    margin: 0 auto; /* Center align images within grid items */
-    width: 50%; /* Ensure images take up 100% of their container's width */
-    height: 75%; /* Ensure images take up 100% of their container's height */
-    object-fit: cover; /* Ensure the entire container is filled, even if it crops the image */
-    max-width: 100%; 
+    margin: 0 auto;
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
+    max-width: 100%;
 }
 
-/* Optional: Adjust styles as needed */
+/* Adjust styles as needed */
 .us-item p {
-    margin-top: 10px; /* Add some space between image and text */
+    margin-top: 10px;
     text-align: center;
 }
