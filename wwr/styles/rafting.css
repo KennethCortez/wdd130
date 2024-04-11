@@ -261,7 +261,7 @@ footer p {
 /* Message Section */
 .message {
     padding: 10px;
-    background-color: #D6E5E3; /* corrected background color */
+    background-color: #D6E5E3;
     border: 1px solid #ddd;
     border-radius: 3px;
     display: flex;
@@ -313,8 +313,8 @@ footer p {
 /* Reservation Section */
 .reservation {
     padding: 20px;
-    background-color: #D6E5E3; /* corrected background color */
-    border: 1px solid #D6E5E3; /* corrected border color */
+    background-color: #D6E5E3;
+    border: 1px solid #D6E5E3;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -328,7 +328,7 @@ footer p {
     gap: 20px;
 }
 
-.reservation-text { /* corrected class name */
+.reservation-text {
     grid-column: 1 / 2;
 }
 
@@ -342,7 +342,7 @@ footer p {
 form {
     max-width: 500px;
     margin: 20px auto;
-    background-color: #D6E5E3; /* corrected background color */
+    background-color: #D6E5E3;
     padding: 10px;
 }
 
@@ -451,14 +451,28 @@ input[type="button"]:hover {
 }
 
 /* Trips section */
+
+.main-container {
+    background-color: #D6E5E3;/
+}
+
+
+.options {
+    background-color: #D6E5E3;
+}
+
+.options h2 {
+    text-align: center;
+}
+
 .trip {
     display: flex;
     justify-content: space-between;
 }
 
 .trip-column {
-    flex: 1;
-    padding: 0 10px;
+    flex-basis: 50%;
+    padding: 0 2px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -466,15 +480,79 @@ input[type="button"]:hover {
 
 .trip-column figure {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.trip-column figcaption {
+    width: 90%;
+}
+
+.trip-column h3 {
+    margin-top: 10px;
 }
 
 .trip-column figure img {
     display: block;
     margin: 0 auto;
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 200px;
     object-fit: cover;
     max-width: 100%;
+}
+
+.trip-column figcaption p {
+    margin: 0;
+}
+
+.trip-column figcaption p::before {
+    content: "• ";
+    margin-right: 5px;
+}
+
+/*Trips table section*/
+
+.tables {
+    background-color: #D6E5E3 ;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 75%;
+    background-color: #D6E5E3;
+    margin: 0 auto;
+}
+
+.table1 caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color:#D6E5E3 ;
+}
+
+.table1 thead {
+    background-color: #D6E5E3;
+}
+
+.table1 th, .table1 td {
+    padding: 15px;
+    text-align: left;
+}
+
+.table1 th {
+    background-color: #D6E5E3;
+    font-weight: bold;
+}
+
+.table1 tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table1 tbody tr:hover {
+    background-color: var(--secondary-color);
 }
 
 /* Helo Section */
